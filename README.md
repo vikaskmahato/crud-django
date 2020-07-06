@@ -1,2 +1,2 @@
 # minipro
-CRUD Operation with Model Form in Django
+A mini project to CRUD operation on database using Model Forms in Django.
