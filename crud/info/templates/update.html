@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+{% load static %}
+{%block content%}
+<div class="row">
+    <div class="col-sm-8">
+       <h4 class="alert alert-warning">Update Information</h4>
+       <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" class="btn btn-success" value="Update">
+        <a href="{% url 'addshow' %}" class="btn btn-info">Back to home</a>
+        </form>
+    </div>
+</div>
+{% endblock content%}
